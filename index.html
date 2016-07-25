@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html>
+	<head lang="en">
+		<title>Public APi to Create Gallery</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<link href="css/normalize.css" rel="stylesheet" type="text/css">
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<link href="css/lightbox.css" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<header role="banner">
+			<h1 id="mainSummary">Hello to my Public APi playground</h1>
+		</header>
+
+	  <main role="main">
+		<div class="container">
+        	<div class='spotify'>
+            	<h1 class="apiHeaders">Running Albums</h1>
+            	<div class="buttons">
+	                <button id="artistShuffle" aria-labelledby="buttonArtistShuffle">Sort by Artist</button>
+	                <p id="buttonArtistShuffle" class="invisible"></p>
+	                <button id="albumShuffle" aria-labelledby="buttonAlbumShuffle">Sort by Album Title</button>
+	                <p id="buttonAlbumShuffle" class="invisible"></p>
+	            </div>
+            	<ul class="albums">
+            	</ul>
+        	</div>
+
+        	<div class="starWars">
+        		<h1 class="apiHeaders">Star Wars Characters</h1>
+        		<div class="buttons">
+        			<button id="nameShuffle" aria-labelledby="buttonNameShuffle">Sort by Name</button>
+        			<p id="buttonNameShuffle" class="invisible"></p>
+        			<button id="randomShuffle" aria-labelledby="buttonRandomShuffle">Random Shuffle</button>
+        			<p id="buttonRandomShuffle" class="invisible"></p>
+        		</div>
+		        <ul id="starWars">
+		        </ul>
+        	</div>
+        </div>
+	  </main>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.3.6/tinysort.min.js"></script>
+		<script type="text/javascript" src="js/usingAjax.js"></script>
+		<script type="text/javascript" src="js/lightbox.js"></script>
+	</body>
+</html>
